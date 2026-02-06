@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link id="dynamic-favicon" rel="icon" href="" />
+    
+    <!-- Google Fonts: Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Background Decor -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+
+    <div class="wrapper">
+      <div class="top-row">
+        <!-- USER PROFILE -->
+        <div class="discord-card glass-card">
+          <div class="card-glow"></div>
+          <div class="avatar-wrapper">
+            <img id="discord-avatar" src="https://via.placeholder.com/64" alt="Avatar" />
+            <div id="discord-status-dot" class="status-dot offline"></div>
+          </div>
+          <div class="user-info">
+            <h2 id="discord-name">user</h2>
+            <span id="user-status" class="status-text">Loading...</span>
+            <div id="status-bubble" class="status-bubble" style="display: none">
+              <span id="status-emoji"></span>
+              <span id="status-text"></span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- ACTIVITY -->
+        <div class="activity-card glass-card" id="activity-card" style="display: none">
+          <div class="card-glow"></div>
+          <div class="card-header">
+             <i class="fas fa-gamepad"></i>
+             <span class="activity-label">Activity</span>
+          </div>
+
+          <div class="activity-content">
+            <img id="activity-icon" src="" alt="Activity Icon" />
+            <div class="activity-info">
+              <h4 id="activity-name"></h4>
+              <p id="activity-details"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SPOTIFY -->
+      <div class="spotify-card glass-card" id="spotify-card" style="display: none">
+        <div class="card-glow"></div>
+        <div class="spotify-content">
+            <div class="spotify-visual">
+                <img id="spotify-album" src="" alt="Album Art" />
+                <div class="equalizer">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <div class="spotify-info">
+            <span class="spotify-playing"><i class="fab fa-spotify"></i> Playing Now</span>
+            <h3 id="spotify-song"></h3>
+            <p id="spotify-artist"></p>
+            </div>
+        </div>
+        <div class="spotify-blur-bg" id="spotify-blur-bg"></div>
+      </div>
+
+      <!-- GITHUB REPOS -->
+      <div class="github-card glass-card" id="github-card">
+        <div class="card-glow"></div>
+        <div class="github-header">
+          <div class="header-title">
+              <i class="fab fa-github"></i>
+              <span>Repositories</span>
+          </div>
+          <a href="https://github.com/VegabondLord?tab=repositories" target="_blank" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="repo-grid" id="repo-grid">
+          <!-- JS dolduracak -->
+        </div>
+      </div>
+
+      <!-- SOCIAL LINKS -->
+      <div class="social-links glass-card">
+        <a
+          href="https://github.com/VegabondLord"
+          target="_blank"
+          aria-label="GitHub"
+          class="social-btn"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://discord.gg/invite"
+          target="_blank"
+          aria-label="Discord"
+          class="social-btn"
+        >
+          <i class="fab fa-discord"></i>
+        </a>
+        <a
+          href="https://open.spotify.com/user/4x0zbl0jh8asdxl613q3gx22v?si=5d745cdc110e490e"
+          target="_blank"
+          aria-label="Spotify"
+          class="social-btn"
+        >
+          <i class="fab fa-spotify"></i>
+        </a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
